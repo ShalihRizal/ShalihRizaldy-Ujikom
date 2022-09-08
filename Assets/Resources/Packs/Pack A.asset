@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ee1ea774dc69e459d67ce76a5cc8ec, type: 3}
+  m_Name: Pack A
+  m_EditorClassIdentifier: 
+  packID: 0
+  packName: A
+  isCompleted: 0
+  isUnlocked: 1
+  levels:
+  - levelID: 1
+    question: Warna dari Mawar ?
+    wrongAnswers:
+    - Biru
+    - Hijau
+    - Kuning
+    correctAnswer: Merah
+    hintImage: {fileID: 21300000, guid: 734d9ae2c7b4de04985a092ce840ba50, type: 3}
+    isAnswered: 1
+  - levelID: 2
+    question: Warna dari Langit ?
+    wrongAnswers:
+    - Merah
+    - Hijau
+    - Kuning
+    correctAnswer: Biru
+    hintImage: {fileID: 21300000, guid: 33d6b1e6a9af2cd4f84c6bbaf739f97d, type: 3}
+    isAnswered: 1
+  - levelID: 3
+    question: Warna dari Daun ?
+    wrongAnswers:
+    - Merah
+    - Biru
+    - Kuning
+    correctAnswer: Hijau
+    hintImage: {fileID: 21300000, guid: a203c71c376ff7b4c9b837013c884a96, type: 3}
+    isAnswered: 0
+  - levelID: 4
+    question: Warna dari Matahari ?
+    wrongAnswers:
+    - Merah
+    - Biru
+    - Hijau
+    correctAnswer: Kuning
+    hintImage: {fileID: 21300000, guid: 01c9747539f83b049b6767cc51e52605, type: 3}
+    isAnswered: 0
+  - levelID: 5
+    question: Warna dari Laut ?
+    wrongAnswers:
+    - Merah
+    - Hijau
+    - Kuning
+    correctAnswer: Biru
+    hintImage: {fileID: 21300000, guid: 772b6078c7be1ef47abca5f786309132, type: 3}
+    isAnswered: 0
