@@ -71,11 +71,11 @@ public class QuestionLoader : MonoBehaviour
         {
             Database.instance.currentLevelIndex++;
             levels[currentLevelIndex].isAnswered = true;
-            Database.instance.currentCorrectAnswer = levels[currentLevelIndex].correctAnswer;
+            Database.instance.currentCorrectAnswer = levels[Database.instance.currentLevelIndex].correctAnswer;
 
             coin.AddCoin(20);
 
-            if (Database.instance.currentLevelIndex >= 5)
+            if (Database.instance.currentLevelIndex >= 4)
             {
                 Database.instance.packs[Database.instance.currentPackIndex].isCompleted = true;
                 SceneManager.LoadScene("Pack");
