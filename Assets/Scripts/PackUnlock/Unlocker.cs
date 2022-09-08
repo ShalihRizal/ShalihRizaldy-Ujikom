@@ -19,7 +19,7 @@ namespace PackUnlock.Unlocker
 
         private void OnEnable()
         {
-            //loader.OnClicked += coin.SpendCoin(9);
+            
         }
     }
 

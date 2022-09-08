@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   packID: 0
   packName: A
-  isCompleted: 0
+  isCompleted: 1
   isUnlocked: 1
   levels:
   - levelID: 1
@@ -25,7 +25,7 @@ MonoBehaviour:
     - Kuning
     correctAnswer: Merah
     hintImage: {fileID: 21300000, guid: 734d9ae2c7b4de04985a092ce840ba50, type: 3}
-    isAnswered: 1
+    isAnswered: 0
   - levelID: 2
     question: Warna dari Langit ?
     wrongAnswers:
@@ -34,7 +34,7 @@ MonoBehaviour:
     - Kuning
     correctAnswer: Biru
     hintImage: {fileID: 21300000, guid: 33d6b1e6a9af2cd4f84c6bbaf739f97d, type: 3}
-    isAnswered: 1
+    isAnswered: 0
   - levelID: 3
     question: Warna dari Daun ?
     wrongAnswers:

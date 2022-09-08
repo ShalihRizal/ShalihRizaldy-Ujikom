@@ -7,10 +7,6 @@ namespace Currency.Coin
 {
     public class Coin : MonoBehaviour
     {
-
-        [SerializeField]
-        PacksLoader loader;
-
         [SerializeField]
         private int coin;
         public int GetCoin()
@@ -31,15 +27,9 @@ namespace Currency.Coin
             }
             else
             {
-                Debug.Log("Not Enough Coin");
+                
             }
         }
-
-        private void OnEnable()
-        {
-            loader.OnClicked += SpendCoin;
-        }
-
     }
 }
 

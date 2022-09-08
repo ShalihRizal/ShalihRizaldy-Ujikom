@@ -21,7 +21,7 @@ namespace Paintastic.Timer
 
         private void Awake()
         {
-            OnTimesUp += Test;
+            OnTimesUp += TimesUp;
         }
 
 
@@ -53,9 +53,9 @@ namespace Paintastic.Timer
             timerText.text = string.Format("{0:00}", seconds);
         }
 
-        void Test()
+        void TimesUp()
         {
-            Debug.Log("Time's Up");
+            
         }
     }
 }

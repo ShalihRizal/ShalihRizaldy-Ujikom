@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Currency.Coin;
 
 public class QuestionLoader : MonoBehaviour
 {
@@ -12,6 +13,12 @@ public class QuestionLoader : MonoBehaviour
 
     [SerializeField]
     private Transform parentContainer;
+
+    [SerializeField]
+    private Image hintImage;
+
+    [SerializeField]
+    Coin coin;
 
     private int currentLevelIndex;
 
@@ -36,6 +43,9 @@ public class QuestionLoader : MonoBehaviour
 
     void LoadAnswer()
     {
+
+        hintImage.sprite = levels[currentLevelIndex].hintImage;
+
         for (int i = 0; i < levels[currentLevelIndex].wrongAnswers.Length; i++)
         {
             Button button = Instantiate(answerButtonPrefab, parentContainer).GetComponent<Button>();
@@ -60,12 +70,21 @@ public class QuestionLoader : MonoBehaviour
         if (name == Database.instance.currentCorrectAnswer)
         {
             Database.instance.currentLevelIndex++;
-            Debug.Log("Jawaban anda Benar");
+            levels[currentLevelIndex].isAnswered = true;
+            Database.instance.currentCorrectAnswer = levels[currentLevelIndex].correctAnswer;
+
+            coin.AddCoin(20);
+
+            if (Database.instance.currentLevelIndex >= 5)
+            {
+                Database.instance.packs[Database.instance.currentPackIndex].isCompleted = true;
+                SceneManager.LoadScene("Pack");
+            }
+
             SceneManager.LoadScene("Gameplay");
         }
         else
         {
-            Debug.Log("Jawaban anda Salah");
             SceneManager.LoadScene("Level");
         }
     }

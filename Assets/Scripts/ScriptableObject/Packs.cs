@@ -12,7 +12,7 @@ public class Packs : ScriptableObject
     public string packName;
 
     [SerializeField]
-    private bool isCompleted;
+    public bool isCompleted;
 
     [SerializeField]
     public bool isUnlocked;

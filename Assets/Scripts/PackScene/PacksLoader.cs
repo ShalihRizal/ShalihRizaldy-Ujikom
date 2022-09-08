@@ -68,7 +68,6 @@ namespace PackScene.PackLoader
 
         void SelectPack()
         {
-            //packData.currentPackName =
             Database.instance.currentPackIndex = selectedPackIndex;
             SceneManager.LoadScene("Level");
         }
@@ -87,7 +86,6 @@ namespace PackScene.PackLoader
         void CheckPrice()
         {
             coin.SpendCoin(100);
-            //Debug.Log("Harus dibeli dengan koin");
         }
     }
 }
